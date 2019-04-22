@@ -1,11 +1,11 @@
-img = imread('website.jpg');
+img = imread('img/goat.jpg');
 img=double(img)/255;
 figure;
 imshow(img);
 nb_rows=size(img,1);
 nb_cols=size(img,2);
 
-sz=8;
+sz=80;
 new_nb_rows=ceil(nb_rows/sz);
 new_nb_cols=ceil(nb_cols/sz);
 compressed_img=zeros(new_nb_rows,new_nb_cols,3);

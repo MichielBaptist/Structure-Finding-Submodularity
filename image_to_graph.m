@@ -40,7 +40,7 @@ function adjacencyMatrix = image_to_graph(image)
                 
                 dist=norm(RGB1(:)-RGB2(:))/sqrt(norm(dirs(k,:)));
                 
-                if dist<=0.30
+                if dist<=0.5
                     dist=0;
                 end
                 adjacencyMatrix(cell1,cell2)=dist;
